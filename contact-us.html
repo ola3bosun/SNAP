@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <style>
+        body{
+            background-image: url(assets/contactus/Gradient.png);
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-size: 30%;
+            position: relative;
+        }
+        img{
+            position: absolute;
+            right: 0px;
+            top: 20px;
+            height: 650px;
+            width: 40%;
+        }
+              /*PAGE DECO STYLING*/
+
+        .bottom-deco{
+            position: absolute;
+            bottom: 3%;
+            left: 100px;
+        }
+        .top-deco{
+            position: absolute;
+            top: 50px;
+            right: 40%;
+        }
+        .top-deco img, .bottom-deco img{
+            height: 80px;
+            width:80px;
+        }
+        .awoman{
+            position: absolute;
+            left: 600px;
+            top: 150px;
+            width: max-content;
+            z-index: 1;
+        }
+        .awoman img{
+            height: 100%;
+            width: 70%;
+        }
+        .portrait-container{
+            display: none;
+        }
+          /*FORM TEXT AND APPEARANCE*/
+        h1{
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 700;
+            font-size: 48px;
+            letter-spacing: 0.059rem;
+            color: #030303;
+            padding-left: 14rem;
+            padding-top: 7%;
+
+        }
+        form{
+            padding-left: 14rem;
+        }
+        .form-item{
+            font-family: 'DM sans',sans-serif;
+            font-weight: 500;
+            font-size: 1rem;
+            letter-spacing: 0.059rem;
+            padding-bottom: .5%;
+        }
+        input {
+            border-radius: 8px;
+            border: 0.5px solid #000;
+            display: block;
+            max-width: 100%;
+            width: 35%;
+            border: solid 1px #D2D2D2;
+            padding: 0.5rem 0 0.5rem 1rem
+        }
+        #messagebox{
+            max-width: 100%;
+            width: 35%;
+            height: 15%;
+            border-radius: 8px;
+            border: solid 1px #D2D2D2;
+            padding: 5px;
+        }
+        .sub-button{
+            font-family: 'DM Sans',sans-serif;
+            font-weight: 500;
+            font-size: 1rem;
+            letter-spacing: 0.059rem;
+            background-color: #D75D01;
+            color: #FFFFFF;
+            text-align: center;
+            border-radius: 8px;
+            border: solid 1px #D75D01;
+            padding: 8px 18px;
+            max-width: 100%;
+            display: block; 
+            margin-left: 14rem;
+        }
+              /*SCREEN RESPONSIVENESS*/
+              @media screen and (max-width: 850px){
+        body{
+            background-image: none;
+        }
+        .page-deco{
+            display: none;
+        }
+        .portrait-container{
+            display: block;
+            margin: auto;
+        }
+        input{
+            width: 90%;
+        }
+        #messagebox{
+            width: 90%;
+        }
+        .page-body{
+            /* padding-left: 10%; */
+            padding-left: 0;
+            padding-top: 4rem;
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            width: 90%;
+        }
+        #messagebox{
+            width: 90%;
+        }
+        h1{
+            text-align: center;
+            padding-left: 0;
+            font-size: 2rem;
+        }
+        .sub-button{
+            margin:64px auto 0 auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        form{
+            padding-left: 10%;
+        }
+        img{
+            display: none;
+            }
+         }
+         .portrait-container img{
+            display: block;
+            height: 100%;
+            width: 60%;
+            margin: 64px auto 40px auto;
+         }
+         @media screen and (max-width:1200px){
+            body{
+                background-size: 40%;
+            }
+            h1{
+                padding-left: 15%;
+                padding-top: 14%;
+            }
+            .sub-button{
+                margin-left: 15%;
+            }
+            form{
+                padding-left: 15%;
+            }
+            .form-item{
+                padding-bottom: 1%;
+            }
+         }
+    </style>
+</head>
+<body>
+    <div class="body">
+       
+        <div class="form-container">
+            <div class="portrait-container">
+                <img src="assets/contactus/Circleportrait.png" alt="...">
+            </div>
+            <h1>Contact Us</h1>
+            <form action="#" autocomplete="on">
+                <div class="form-item">
+                    <label for="email">Email Address</label><br>
+                    <input type="email" for="email" class="input-box" required autocomplete="on">
+                </div>
+                <div class="form-item">
+                    <label for="name">Name</label><br>
+                    <input type="text" class="input-box" for="name" required autocomplete="on">
+                </div>
+                <div class="form-item">
+                    <label for="phonenumber">Phone Number</label><br>
+                    <input type="number" for="phonenumber" class="input-box" required autocomplete="on">
+                </div>
+                <div class="form-item">
+                    <label for="message">Message</label><br>
+                    <textarea id="messagebox" for="message" required rows="6" columns="200" ></textarea>
+                </div>
+            </form>
+            <div class="right-image">
+                <img src="assets/contactus/Image Link.png" alt="">
+            </div>
+        </div>
+    </div>
+   <div class="page-deco">
+        <div class="bottom-deco">
+            <img src="assets/contactus/Circlebottom.png" alt="...">
+        </div>
+        <div class="top-deco">
+            <img src="assets/contactus/Circletop.png" alt="...">
+        </div>
+   </div>
+   <button class="sub-button" onclick="alert('This site is still in development')">Submit</button>
+</body>
+</html>

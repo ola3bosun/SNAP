@@ -1,0 +1,251 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PAGE FORM PROPERTIES */
+.lens{
+    display: none;
+}
+h1{
+    font-family: 'Cormorant Garamond', serif;
+    color: #030303;
+    padding-bottom: .5rem;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0.059rem;
+    padding-left: 5rem;
+
+}
+.below{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    color: #666666;
+    font-size: 1rem;
+    padding-bottom: 3rem;
+    padding-left: 5rem;
+}
+.page-body{
+     display: flex;
+}
+.awoman img{
+    width: 70%;
+    height: 90%;
+    float: right;
+}
+.page-text{
+    width: 50%;
+    margin: 80px auto 50px auto;
+}
+.form-item{
+    padding-left: 5rem;
+    padding-bottom: 3%;
+}
+.form-input{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.059rem;
+    height: 3%;
+    width: 100%;
+    height: 8%;
+}
+.input-box{
+    width: 100%;
+    line-height: 20px;
+    padding: 5px 25px;
+    max-width: 100%;
+    border: 1px solid #383838;
+    border-radius: 4px;
+    display: block;
+    border: solid 1px #D2D2D2;
+
+}
+.form-item-button{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.059rem;
+    margin-left: 5rem;
+    background-color: #D75D01;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 8px;
+    border: solid 1px#D75D01;
+    padding: 10px 20px;
+    max-width: 100%;
+    display: block;
+}
+input {
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid #D2D2D2;
+    display: block;
+}
+
+.signup-image-container{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    float: right;
+}
+
+.sign-up-with{
+    display: none;
+}
+.logos{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    margin: 14px auto 0 auto;
+}
+
+/* RESPONSIVENESS */
+@media only screen and (max-width: 700px){
+body{
+    background: #FFFFFF;
+}
+.awoman{
+    display: none;
+}
+.signup-image-container{
+    display: none;
+}
+.form-item{
+ padding-bottom: 3%;
+}
+ .below{
+    font-weight: 400;
+    color: #666666;
+    font-size: 1rem;
+    padding-bottom: 24px;
+    padding-left: 1rem;
+    text-align: center;
+    max-width: 90%;
+}
+.page-body{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.page-text{
+    position: absolute;
+    width: 100%;
+    margin: 0;
+}
+form{
+    padding-left: 1rem;
+}
+.form-item{
+    padding-left: 1rem;
+    padding-bottom: 3%;
+}
+.form-input{
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.059rem;
+    height: 3%;
+    width: 100%;
+    color:#030303;
+    height: 8%;
+}
+.input-box{
+    width: 100%;
+    line-height: 20px;
+    padding: 5px 20px;
+    max-width: 90%;
+    border: 1px solid #383838;
+    border-radius: 4px;
+    display: block;
+
+}
+.form-item-button{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.059rem;
+    margin: 0 auto;
+    background-color:#D75D01;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 8px;
+    border: solid 1px #D75D01;
+    max-width: 100%;
+    display: block;
+}
+input {
+    height: 40px;
+    border-radius: 6px;
+    display: block;
+}
+.lens{
+    display: block;
+    text-align: center;
+}
+h1{
+    padding-left: 0;
+    text-align: center;
+    font-family: 'DM Sans', serif;
+    font-weight: 700;
+    font-size: 32px;
+    padding-bottom: 16px;
+}
+.sign-up-with{
+    display: block;
+    text-align: center;
+    font-family: 'DM sans', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+.sign-up-with p{
+    padding: 8px;
+    margin-bottom: 0;
+}
+.logos{
+    justify-content: center;
+    gap: 7px;
+    padding-bottom: 8px;
+    margin-top: 0;
+}   }
+@media screen and (max-width: 1400px){
+    .input-box{
+        max-width: 100%;
+        width: 100%;
+        height: 34px;
+    }
+    .page-text{
+        width: 90%;
+        padding-left: 2rem;
+        margin: 128px 0 0 0;
+    }
+    h1{
+        font-size: 38px;
+    }
+    .below{
+        font-size: 15px;
+        padding-bottom: 24px;
+    }
+    .form-input{
+        font-size: 16px;
+        letter-spacing: 0.05875rem;
+    }
+    .form-item{
+        padding-bottom: 8px;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    .form-item-button{
+        padding: 12px 32px;
+        font-size: 20px;
+    }
+    .awoman img{
+        width: 100%;
+        height: 93%;
+}
+}

@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#search {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+}
+
+header .logo {
+    width: 45%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.944444px;
+    color: #959292;
+
+}
+
+.active {
+    color: #D75D01;
+    text-decoration: underline #D75D01;
+}
+
+.btn {
+    background: #D75D01;
+    border-radius: 16px;
+    padding: 10px 22px;
+    color: white;
+}
+
+.btn:hover {
+    border: 1px solid #D75D01;
+    color: #D75D01;
+    background: none;
+}
+
+footer {
+    background: #000000;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 80px;
+}
+
+.one,
+.two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+
+.product {
+    width: 45%;
+}
+
+.features {
+    width: 45%;
+}
+
+.company {
+    width: 45%;
+    margin-top: 20px;
+}
+
+.help {
+    width: 45%;
+    margin-top: 30px;
+}
+
+footer p {
+    color: #666666;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.944444px;
+    text-transform: capitalize;
+}
+
+footer h3 {
+    color: white;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.944444px;
+    margin-bottom: 10px;
+}
+
+.reserve {
+    padding: 16px 80px;
+}
+
+.reserve p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+}
+
+select {
+    background: #000;
+    color: white;
+    padding: 8px 30px;
+    text-align: start;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+@media screen and (max-width: 800px) and (min-width: 320px) {
+    header {
+        padding: 16px 20px;
+        position: relative;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .logo {
+        width: 30%;
+        margin-left: -15px;
+    }
+
+    #search {
+        display: block;
+        /* margin: 0 auto; */
+        margin-left: -60px;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 15px;
+        border: none;
+        background: #F4F4F4;
+        border-radius: 16px;
+    }
+
+    #search::placeholder {
+        text-align: center;
+    }
+
+    .icon {
+        position: absolute;
+        left: 35%;
+        top: 33%;
+    }
+
+    .hamburger {
+        display: block;
+        width: 20%;
+        margin-left: 10px;
+    }
+
+    .foot {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 16px 20px;
+    }
+
+    footer h3{
+        font-size: 20px;
+    }
+
+    footer p{
+        font-size: 16px;
+    }
+
+    .one,
+    .two {
+        width: 100%;
+    }
+
+    .product {
+        width: 50%;
+        margin-top: 25px;
+    }
+
+    .features {
+        width: 50%;
+        margin-left: 20px;
+        margin-top: -20px;
+    }
+
+    .company {
+        width: 50%;
+    }
+
+    .help {
+        width: 50%;
+        margin-top: -12px;
+    }
+
+    .reserve {
+        margin-left: -60px;
+    }
+}
